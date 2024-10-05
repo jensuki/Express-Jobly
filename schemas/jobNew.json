@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 1
+        },
+        "salary": {
+            "type": "number",
+            "minimum": 0
+        },
+        "equity": {
+            "type": "string",
+            "pattern": "^(0(\\.\\d{1,2})?|1\\.00)$"
+        },
+        "companyHandle": {
+            "type": "string",
+            "minLength": 1
+        }
+    },
+    "required": [
+        "title",
+        "salary",
+        "companyHandle"
+    ]
+}
